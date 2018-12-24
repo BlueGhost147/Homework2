@@ -1,0 +1,4 @@
+package beans
+
+class Note {
+}

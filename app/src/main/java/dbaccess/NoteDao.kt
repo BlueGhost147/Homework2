@@ -1,0 +1,4 @@
+package dbaccess
+
+class NoteDao {
+}
