@@ -35,7 +35,8 @@ class AddNoteActivity : AppCompatActivity() {
         }
         catch (e : SQLiteConstraintException)
         {
-            Toast.makeText(this, "This note is already in the database", Toast.LENGTH_SHORT).show()
+            // This should never happen! Identical GUIDs
+            Toast.makeText(this, "Database error!", Toast.LENGTH_SHORT).show()
         }
 
         // o finish Activity

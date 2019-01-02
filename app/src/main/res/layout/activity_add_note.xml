@@ -9,24 +9,33 @@
     tools:context=".MainActivity">
 
     <EditText
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Title"
+        android:hint="@string/hint_title"
         android:id="@+id/inputNoteTitle"
+        android:inputType="text"
+        android:layout_marginEnd="60dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="10dp"
         />
 
     <EditText
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Text"
-        android:inputType="number"
+        android:hint="@string/hint_text"
+        android:inputType="text"
         android:id="@+id/inputNoteText"
+        android:layout_marginEnd="60dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginBottom="15dp"
         />
 
     <Button
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="SAVE NOTE"
-        android:onClick="onClickSaveNote"/>
+        android:text="@string/button_save_note"
+        android:onClick="onClickSaveNote"
+        android:layout_marginEnd="100dp"
+        android:layout_marginStart="100dp"/>
 
 </LinearLayout>

@@ -7,6 +7,7 @@ import android.view.ViewGroup
 import android.widget.TextView
 import at.fh.swengb.raith.homeexercise2.R
 import beans.Note
+import kotlinx.android.synthetic.main.item_note.view.*
 
 class NoteListViewAdapter : RecyclerView.Adapter<NoteViewHolder>() {
 
@@ -39,7 +40,10 @@ class NoteListViewAdapter : RecyclerView.Adapter<NoteViewHolder>() {
 
 class NoteViewHolder(itemView: View): RecyclerView.ViewHolder(itemView) {
     fun bindItem(note: Note) {
-        itemView.findViewById<TextView>(R.id.item_note_tfText).text = note.toString()
+        itemView.item_note_tfText.text = note.text
+        itemView.item_note_tfTitle.text = note.title
 
+        //itemView.findViewById<TextView>(R.id.item_note_tfText).text = note.text
+        //itemView.findViewById<TextView>(R.id.item_note_tfTitle).text = note.title
     }
 }
